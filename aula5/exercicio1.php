@@ -13,9 +13,9 @@
 	echo "Exercício 1 - Apresentação de três números em ordem decrescente,<br>feito por Lana Akemi Ihara, 3º INFO.";
 
     //Declaração das variáveis.
-    $n1 = 2;
-    $n2 = 3;
-    $n3 = 1;
+    $n1 = 6;
+    $n2 = 5;
+    $n3 = 6;
 
     //Impressão das variáveis $n1, $n2 e $n3.
 	echo "<br><br>(1º) Primeiro número: ".$n1.";";
@@ -23,7 +23,7 @@
 	echo "<br>(3º) Terceiro número: ".$n3.".";
 
     //n1 > n2, n2 > n3
-
+1, 2, 2
     //Comando condicional para verificar qual número é maior que o outro.
     if ($n1 < $n2)
         if ($n2 < $n3)
@@ -42,4 +42,10 @@
     else
         if ($n3 > $n2)
             echo "A ordem decrescente dos três números é: ".$n1.", ".$n2." e ".$n1;
+        else
+            if ($n1 > $n3)
+                echo "A ordem decrescente dos três números é: ".$n1.", ".$n2." e ".$n3;
+            else
+                if ($n1 == $n3)
+                    echo "A ordem decrescente";
 ?>
