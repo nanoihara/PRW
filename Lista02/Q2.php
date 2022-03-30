@@ -17,11 +17,24 @@
 
     //Declaração das variáveis.
     $num = 0;
-    $soma = 0;
+    $mes;
     
-    //Comando de repetição, para somar todos os números pares menores que 100.
-    for ($num; $num < 100; $num = $num + 2)
-        $soma = $soma + $num;
+    //Comando switch case, para trocar o valor numérico da variável para o seu nome equivalente do mês.
+    switch($num){
+        case 1: $mes = "Janeiro"; break;
+        case 2: $mes = "Fevereiro"; break;
+        case 3: $mes = "Março"; break;
+        case 4: $mes = "Abril"; break;
+        case 5: $mes = "Maio"; break;
+        case 6: $mes = "Junho"; break;
+        case 7: $mes = "Julho"; break;
+        case 8: $mes = "Agosto"; break;
+        case 9: $mes = "Setembro"; break;
+        case 10: $mes = "Outubro"; break;
+        case 11: $mes = "Novembro"; break;
+        case 12: $mes = "Dezembro"; break;
+        default: $mes = "nada"; break;
+    }
     
     //Imrpessão do resultado armazenado em $soma, sendo este a soma de todos os números pares menores que 100.
     echo "<br><br>A soma de todos os números pares menores que 100 resulta em: ".$soma;
