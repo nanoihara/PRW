@@ -46,7 +46,7 @@
         else
             echo "<br><br>O número digitado(".$num.") não é um número primo, já que ele é divisível por outros números além de 1 e ele mesmo.";
     
-    // http://localhost/prw/Lista02/Q2.php
-    // http://127.0.0.1/prw/Lista02/Q2.php
+    // http://localhost/prw/Lista02/Q3.php
+    // http://127.0.0.1/prw/Lista02/Q3.php
 
 ?>
