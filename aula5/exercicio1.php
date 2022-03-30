@@ -22,9 +22,7 @@
 	echo "<br>(2º) Segundo número: ".$n2.";";
 	echo "<br>(3º) Terceiro número: ".$n3.".";
 
-    //n1 > n2, n2 > n3
-1, 2, 2
-    //Comando condicional para verificar qual número é maior que o outro.
+    //n1 > n2, n2 > n3 Comando condicional para verificar qual número é maior que o outro */
     if ($n1 < $n2)
         if ($n2 < $n3)
             echo "A ordem decrescente dos três números é: ".$n3.", ".$n2." e ".$n1;
@@ -48,4 +46,5 @@
             else
                 if ($n1 == $n3)
                     echo "A ordem decrescente";
+                else
 ?>
