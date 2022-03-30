@@ -19,6 +19,8 @@
     $num = 0;
     $mes;
     
+    //Impressão do número armazenado em $num.
+    echo "<br><br>Número digitado: ".$num;
     //Comando switch case, para trocar o valor numérico da variável para o seu nome equivalente do mês.
     switch($num){
         case 1: $mes = "Janeiro"; break;
@@ -35,10 +37,13 @@
         case 12: $mes = "Dezembro"; break;
         default: $mes = "nada"; break;
     }
-    
-    //Imrpessão do resultado armazenado em $soma, sendo este a soma de todos os números pares menores que 100.
-    echo "<br><br>A soma de todos os números pares menores que 100 resulta em: ".$soma;
 
+    //Comando condicional para impressão do resultado armazenado em $mês, sendo o if para caso o número digitado não corresponder a um mês.
+    if ($mes == "nada")
+        echo "<br><br>O número digitado não corresponde a nenhum mês (entre 1 a 12)";
+    else
+        echo "<br><br>O mês equivalente ao número digitado (".$num.") é: ".$mes;
+    
     // http://localhost/prw/Lista02/Q2.php
     // http://127.0.0.1/prw/Lista02/Q2.php
 
