@@ -20,7 +20,7 @@
     for ($num; $num < 100; $num = $num + 2)
         $soma = $soma + $num;
     
-    //Imrpessão do resultado armazenado em $soma, sendo este a soma de todos os números pares menores que 100.
+    //Impressão do resultado armazenado em $soma, sendo este a soma de todos os números pares menores que 100.
     echo "<br><br>A soma de todos os números pares menores que 100 resulta em: ".$soma;
 
     // http://localhost/prw/Lista02/Q1.php
