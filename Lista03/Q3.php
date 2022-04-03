@@ -10,7 +10,7 @@
     // 3. Crie um script em PHP a em que a partir do seu CEP. Capture apenas os 3 últimos números e exiba-o.
 
     //Impressão do nome.
-	echo "Questão 3 - Script que exibe os três últimos números do CEP e exibe-o,<br>feito por Lana Akemi Ihara, 3º INFO.";
+	echo "Questão 3 - Script que exibe os três últimos números do CEP,<br>feito por Lana Akemi Ihara, 3º INFO.";
 
     //Declaração das variáveis.
     $cep = "80610-905";
