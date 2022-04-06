@@ -12,7 +12,7 @@
     //Impressão do nome.
 	echo "Questão 4 - Script que exibe separadamente o dia, mês e ano em só uma variável,<br>feito por Lana Akemi Ihara, 3º INFO.";
 
-    //Declaração das variáveis.
+    //Declaração da variável.
     $data = "data";
 
     //Impressão do nome da única variável que armazenará os valores do dia, mês e ano.
