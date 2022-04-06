@@ -17,7 +17,7 @@
     $palavraR;
 
     //Impressão da palavra armazenada em $palavra.
-    echo "<br><br>A palavra armazenada é: $".$palavra;
+    echo "<br><br>A palavra armazenada é: ".$palavra;
 
     //Comando de manipulação de string para reverter uma palavra (strrev) em $palavra.
     $palavraR = strrev($palavra);
