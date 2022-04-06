@@ -13,18 +13,41 @@
 	echo "Questão 5 - Script que exibe o dia da semana a partir de uma data,<br>feito por Lana Akemi Ihara, 3º INFO.";
 
     //Declaração das variáveis.
-    $data = "data";
+    $semanaNum;
+    $semanaBR;
 
-    //Impressão do nome da única variável que armazenará os valores do dia, mês e ano.
-    echo "<br><br>O nome da única variável que terá os valores do dia, mês e ano é: $".$data;
+    //Comando de manipulação de data (que indica o dia da semana) inserido na variável $semana.
+    $semanaNum = date("w");
 
-    //Comando de manipulação de data inserido na variável $data.
-    $data = date("d/F/Y");
+    //Impressão do valor armazenado em $semanaNum.
+    echo "<br><br>O valor armazenado é: ".$semanaNum;
+    
+    //Comandos condicionais para armazenar tal nome extenso do dia da semana na variável $semanaBR de acordo pelo número da semana.
+    if ($semanaNum == 0)
+        $semanaBR = "Domingo";
 
-    //Ao final, irá mostrar a data de hoje (em formato de dia/mês/ano) em apenas uma variável.
-    echo "<br><br>A data de hoje armazenada em apenas uma variável é: ".$data;
+    else if ($semanaNum == 1)
+        $semanaBR = "Segunda-feira";
 
-    // http://localhost/prw/Lista03/Q4.php
-    // http://127.0.0.1/prw/Lista03/Q4.php
+    else if ($semanaNum == 2)
+        $semanaBR = "Terça-feira";
+
+    else if ($semanaNum == 3)
+        $semanaBR = "Quarta-feira";
+
+    else if ($semanaNum == 4)
+        $semanaBR = "Quinta-feira";
+
+    else if ($semanaNum == 5)
+        $semanaBR = "Sexta-feira";
+
+    else
+        $semanaBR = "Sábado";
+
+    //Ao final, irá mostrar o dia da semana de hoje.
+    echo "<br><br>Portanto, o dia da semana hoje é: ".$semanaBR;
+
+    // http://localhost/prw/Lista03/Q5.php
+    // http://127.0.0.1/prw/Lista03/Q5.php
 
 ?>
