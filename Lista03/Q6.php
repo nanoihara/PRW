@@ -12,7 +12,7 @@
     //Impressão do nome.
 	echo "Questão 6 - Script que exibe a palavra contida em uma variável de forma inversa,<br>feito por Lana Akemi Ihara, 3º INFO.";
 
-    //Declaração da variável.
+    //Declaração das variáveis.
     $palavra = "BiScoito de mel doCE e mUito bOM";
     $palavraR;
 
