@@ -10,7 +10,7 @@
     // 1. Criar um formulário que contenha os itens apresentados abaixo. Em seguida faça um script php que efetue os cálculos e apresente o resultado.
 
     //Impressão do nome.
-	echo "Questão 7 - Script que exibe o link invertido em uma variável e transforme em um link funcional,<br>feito por Lana Akemi Ihara, 3º INFO.";
+    echo "Questão 7 - Script que exibe o link invertido em uma variável e transforme em um link funcional,<br>feito por Lana Akemi Ihara, 3º INFO.";
 
     //Declaração das variáveis.
     // $NUM1
