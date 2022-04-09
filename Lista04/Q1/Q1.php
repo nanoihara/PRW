@@ -21,38 +21,57 @@
     $num2 = $_GET["num2"];
     $num2 = intval($num2);
 
-    //Variáveis para os cálculos matemáticos ($calc) e a opção escolhida no ratio button ($matematica).
-    $calc;
+    //Variável para a opção escolhida no ratio button ($matematica).
     $matematica = $_GET["matematica"];
 
     //Comando condicional para verificar qual foi a opção escolhida no ration button da página Q1.html.
-    //Caso tiver o valor "somar", ele fará o processo de somar os dois números digitados e imprimirá este valor.
-    //Se estiver armazenado como "subtrair", irá subtrair o primeiro número pelo segundo ($num1 - $num2) e imprimirá o valor.
-    //Fará o mesmo procedimento com os demais valores ("dividir" & "multiplicar") com seus respectivos cálculos.
+    //Caso tiver o valor "somar", ele chamará a função soma e imprimirá este valor.
+    //Se estiver armazenado como "subtrair", irá chamar a função subtrair e imprimirá o valor.
+    //Fará o mesmo procedimento com os demais valores de $matematica ("dividir" & "multiplicar").
     
     if ($matematica == "somar") //SOMA
-        echo "<h1> Soma de dois números </h1>";
-        $calc = $num1 + $num2;
-        echo "<br>A soma de ".$num1." com ".$num2." resulta em: ".$calc;
+        echo "<h1> Soma de dois números </h1><br>A soma de ".$num1." com ".$num2." resulta em: ".soma($num1, $num2);
 
     else if ($matematica == "subtrair") //SUBTRAÇÃO
-        echo "<h1> Subtração de dois números </h1>";
-        $calc = $num1 - $num2;
-        echo "<br>A subtração de ".$num1." com ".$num2." resulta em: ".$calc;
+        echo "<h1> Subtração de dois números </h1><br>A subtração de ".$num1." com ".$num2." resulta em: ".subtrair($num1, $num2);
 
     else if ($matematica == "dividir") //DIVISÃO
-        echo "<h1> Divisão de dois números </h1>";
-        $calc = $num1 / $num2;
-        echo "<br>A divisão de ".$num1." por ".$num2." resulta em: ".$calc;
+        echo "<h1> Divisão de dois números </h1><br>A divisão de ".$num1." por ".$num2." resulta em: ".dividir($num1, $num2);
 
     else if ($matematica == "multiplicar") //MULTIPLICAÇÃO
-        echo "<h1> Multiplicação de dois números </h1>";
-        $calc = $num1 * $num2;
-        echo "<br>A multiplicação de ".$num1." com ".$num2." resulta em: ".$calc;
+        echo "<h1> Multiplicação de dois números </h1><br>A multiplicação de ".$num1." com ".$num2." resulta em: ".multiplicar($num1, $num2);
     
-    else 
-        echo "<h1> Aviso = Não foi selecionado nenhuma das opções de operação para fazer com os dois números. Volte na página anterior e escolha entre uma das operações.";
-        
+    else
+        echo "<br><b>Aviso =</b> <i>Não foi selecionado nenhuma das opções de operação para fazer com os dois números. Volte na página anterior e escolha entre uma das operações.</i>";
+
+    //Funções de acordo com a operação que deve ser feita com os dois números.
+    function soma($a, $b) { //SOMA
+
+        $calc = $a + $b;
+
+        return $calc;
+    }
+
+    function subtrair($a, $b) { //SUBTRAÇÃO
+
+        $calc = $a - $b;
+
+        return $calc;
+    }
+
+    function dividir($a, $b) { //DIVISÃO
+
+        $calc = $a / $b;
+
+        return $calc;
+    }
+
+    function multiplicar($a, $b) { //MULTIPLICAÇÃO
+
+        $calc = $a * $b;
+
+        return $calc;
+    }
     // http://localhost/prw/Lista04/Q1/Q1.html
     // http://127.0.0.1/prw/Lista04/Q1/Q1.html
 
