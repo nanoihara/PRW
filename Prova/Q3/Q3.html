@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3 - Prova</title>
+</head>
+<body>
+    <!-- LANA AKEMI IHARA - 3º INFO -->
+    <!-- 3. (3,5 Pontos) (Formulário e Estrutura Condicional) Criar um formulário para pedir o peso e altura de uma
+    pessoa, efetuar o cálculo do IMC (Índice de Massa Corporal) e depois mostrar o resultado do cálculo e a
+    mensagem de acordo com a tabela abaixo:
+    É simples calcular o seu IMC, Por exemplo, se o seu peso é 80kg e a sua altura é 1,80m, a fórmula
+    para calcular o IMC ficará:
+    IMC = peso ÷ altura^2
+    IMC = 80 ÷ 1,80^2
+    IMC = 80 ÷ 3,24
+    IMC = 24,69 -->
+    
+    <!-- título -->
+    <h1>Cálculo do IMC</h1>
+
+    <!-- "action" -> para que página o botão "submit" deve lhe enviar após este processo -->
+    <!-- "method" controla como as informações devem ser enviadas ao servidor -->
+    <form action="Q3.php" method="POST">
+
+        <!-- Caixa de texto de uma linha (TEXT) -->
+        <div> 
+            <label for="peso">Peso (em kg):</label>
+            <input type="text" name="peso">
+        </div>
+
+        <div>
+            <label for="altura">Altura (em m):</label>
+            <input type="text" name="altura">
+        </div>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+    <p>Feito por Lana Akemi Ihara, 3º INFO.</p>
+
+    <!-- // http://localhost/prw/Prova/Q3/Q3.html -->
+    <!-- // http://127.0.0.1/prw/Prova/Q3/Q3.html -->
+    
+</body>
+</html>
