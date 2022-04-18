@@ -36,7 +36,7 @@
     if ($i === false)
         echo "<br><br>O produto não existe armazenado no sistema.";
     else
-        echo "<br<br>O produto está disponível e armazenado no sistema.<br>Ele se encontra no índice <b>".$i."</b>.";
+        echo "<br<br>O produto está disponível e armazenado no sistema.<br>Ele se encontra com o código: <b>".$i."</b>.";
     
     // http://localhost/prw/Lista05/Q1/Q1.html
     // http://127.0.0.1/prw/Lista05/Q1/Q1.html
