@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2 - Lista 5</title>
+</head>
+<body>
+    <!-- LANA AKEMI IHARA - 3º INFO -->
+    <!-- 1. (Formulário e Vetor) Fazer um formulário em HTML que permita ao usuário digitar o
+    nome de um produto de informática. Um programa em PHP deverá receber o nome
+    desse produto e fazer uma busca por esse produto dentro de uma relação de produtos
+    de informática em um vetor e localizar a posição (índice) desse produto dentro do vetor.
+    O índice corresponde ao código do produto que deve ser impresso para o usuário.
+    
+    2. (Formulário e Vetor) Repetir o exercício anterior, mas dessa vez deve ter 2 vetores, um
+    com os nomes dos produtos e outro com os preços desses produtos, que devem ser
+    impressos após a localização do mesmo. -->
+    
+    <!-- título -->
+    <h1>Digite o nome de um produto de informática</h1>
+
+    <!-- "action" -> para que página o botão "submit" deve lhe enviar após este processo -->
+    <!-- "method" controla como as informações devem ser enviadas ao servidor -->
+    <form action="Q2.php" method="POST">
+        <div>
+            <label for="produto">Nome do produto que deseja procurar no sistema:</label>
+            <input type="text" name="produto">
+        </div>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+    <p>Feito por Lana Akemi Ihara, 3º INFO.</p>
+
+    <!-- // http://localhost/prw/Lista05/Q2/Q2.html -->
+    <!-- // http://127.0.0.1/prw/Lista05/Q2/Q2.html -->
+    
+</body>
+</html>
