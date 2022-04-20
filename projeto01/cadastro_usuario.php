@@ -27,8 +27,15 @@
     echo "<b>Telefone:</b> ".$fone_usuario."</p>";
 
     //Ao final, cria-se uma variável para inserir os valores no banco de dados.
-    $sql = "INSERT INTO usuario ('nome_usuario', 'email_usuario', 'telefone_usuario')
+    $sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario)
             VALUES ('".$nome_usuario."', '".$email_usuario."', '".$fone_usuario."');";
+    
+    $result = mysqli_query($con, $sql);
+
+    if ($result)
+        echo "Dados inseridos com sucesso";
+    else
+        echo "Erro ao inserir no banco de dados: ".mysqli_error($con);
 
     // http://localhost/prw/projeto01/cadastro_usuario.htm
     // http://127.0.0.1/prw/projeto01/cadastro_usuario.htm
