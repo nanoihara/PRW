@@ -1,5 +1,5 @@
 -- Drop banco de dados
--- drop database projeto01;
+drop database projeto01;
 
 -- Criação do banco de dados
 create database projeto01;
@@ -15,3 +15,6 @@ create table usuario (
     telefone_usuario varchar(30) not null, -- no .php é fone_usuario
     primary key (id_usuario)
 );
+
+-- Ao final, clicar no "raiozinho" do laado direito do botão "salvar"
+-- e clicar em "refresh", do lado superior direito do título "SCHEMAS"
