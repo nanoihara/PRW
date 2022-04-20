@@ -15,6 +15,7 @@
 
     //Inclusão do arquivo .php que fará a conexão entre o banco de dados e o site.
     include("conexao.php");
+    
     //Declaração das variáveis.
     $nome_usuario = $_POST["nome_usuario"];
     $email_usuario = $_POST["email_usuario"];
