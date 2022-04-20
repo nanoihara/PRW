@@ -25,7 +25,11 @@
     echo "<p><b>Nome do usuario:</b> ".$nome_usuario."<br>";
     echo "<b>E-mail:</b> ".$email_usuario."<br>";
     echo "<b>Telefone:</b> ".$fone_usuario."</p>";
-    
+
+    //Ao final, cria-se uma variável para inserir os valores no banco de dados.
+    $sql = "INSERT INTO usuario ('nome_usuario', 'email_usuario', 'telefone_usuario')
+            VALUES ('".$nome_usuario."', '".$email_usuario."', '".$fone_usuario."');";
+
     // http://localhost/prw/projeto01/cadastro_usuario.htm
     // http://127.0.0.1/prw/projeto01/cadastro_usuario.htm
 
