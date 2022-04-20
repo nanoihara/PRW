@@ -15,7 +15,7 @@
 
     //Inclusão do arquivo .php que fará a conexão entre o banco de dados e o site.
     include("conexao.php");
-    
+
     //Declaração das variáveis.
     $nome_usuario = $_POST["nome_usuario"];
     $email_usuario = $_POST["email_usuario"];
@@ -25,6 +25,7 @@
     echo "<p><b>Nome do usuario:</b> ".$nome_usuario."<br>";
     echo "<b>E-mail:</b> ".$email_usuario."<br>";
     echo "<b>Telefone:</b> ".$fone_usuario."</p>";
+    
     // http://localhost/prw/projeto01/cadastro_usuario.htm
     // http://127.0.0.1/prw/projeto01/cadastro_usuario.htm
 
