@@ -13,6 +13,8 @@
     //Impressão do nome.
     echo "Exemplo de Aula - Formulário associado a um banco de dados (cadastro de um usuário),<br>feito por Lana Akemi Ihara, 3º INFO.";
 
+    //Inclusão do arquivo .php que fará a conexão entre o banco de dados e o site.
+    include("conexao.php");
     //Declaração das variáveis.
     $nome_usuario = $_POST["nome_usuario"];
     $email_usuario = $_POST["email_usuario"];
