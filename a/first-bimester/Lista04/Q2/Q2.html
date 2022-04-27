@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2 - Lista 4</title>
+</head>
+<body>
+    <!-- LANA AKEMI IHARA - 3º INFO -->
+    <!-- 2. Fazer um formulário que contenha todos os itens apresentados abaixo. Em
+    seguida, faça um script php que apresente todos os dados enviados.
+    - Caixa de texto de uma linha (Text);
+    - Caixa de texto de rolagem (TextArea);
+    - Caixa de seleção (CheckBox);
+    - Botão de opção (Radio);
+    - Menu suspenso (Select e Option);
+    - Botão de envio (Submit). -->
+    
+    <!-- título -->
+    <h1>IFSP - Campus Birigui</h1>
+    <i>Matrícula/Transferência de um aluno no Ensino Médio</i>
+
+    <br> <br> <br>
+    
+    <!-- Selecione as opções e/ou insira dados nas caixas de texto abaixo. -->
+    <!-- "action" -> para que página o botão "submit" deve lhe enviar após este processo -->
+    <!-- "method" controla como as informações devem ser enviadas ao servidor -->
+    <form action="Q2.php" method="POST">
+
+        <!-- Menu de opções (RADIO) -->
+        <div>
+            <!-- Ano que o aluno se transferirá/matriculará -->
+            • Ano que o aluno se transferirá/matriculará no Ensino Médio:
+
+            <input type="radio" name="ano" value="1"> <!-- 1º ANO -->
+            <label for="1">1º ano</label>
+
+            <input type="radio" name="ano" value="2"> <!-- 2º ANO -->
+            <label for="2">2º ano</label>
+
+            <input type="radio" name="ano" value="3"> <!-- 3º ANO -->
+            <label for="3">3º ano</label>
+        </div>
+
+        <br>
+        
+        <!-- Menu suspenso (SELECT & OPTION)-->
+        <div>
+            <!-- Curso que ele estará se matriculando ou se transferindo -->
+            • Curso em que estará se matriculando ou transferindo-se: 
+
+            <select name = "curso" value = 0 size = 1>
+                <option>Administração</option>
+                <option>Agronomia</option>
+                <option>Informática</option>
+            </select>
+        </div>
+
+        <br> 
+
+        <!-- Caixa de texto de uma linha (TEXT) -->
+        <!-- RESPONSÁVEL -->
+        <h3>Responsável:</h3>
+        <div>
+            <!-- Nome do responsável -->
+            <label for="nomeR">• Nome:</label>
+            <input type="text" name="nomeR">
+        </div>
+
+        <br>
+
+        <div>
+            <!-- Telefone do responsável -->
+            <label for="telefone">• Telefone:</label>
+            <input type="text" name="telefone">
+        </div>
+
+        <br>
+
+        <div>
+            <!-- E-mail do responsável -->
+            <label for="email">• E-mail:</label>
+            <input type="text" name="email">
+        </div>
+
+        <br>
+
+        <!-- ALUNO -->
+        <h3>Aluno:</h3>
+        <div>
+            <!-- Nome do aluno -->
+            <label for="nomeA">• Nome:</label>
+            <input type="text" name="nomeA">
+        </div>
+        
+        <br>
+
+        <div>
+            <!-- Idade do aluno -->
+            <label for="idade">• Idade:</label>
+            <input type="text" name="idade">
+        </div>
+
+        <br> <br>
+
+        <!-- Caixa de seleção (CHECKBOX) -->
+        <div>
+            <!-- Alergias que o aluno possui -->
+            • Selecione as alergias que o aluno possui: <br>
+            <b>Observação</b>: Caso ele tiver NENHUMA alergia, selecionar a caixa "nenhuma". <br>
+            <input type = "checkbox" name = "alergia[]" value = "rinite"> rinite
+            <input type = "checkbox" name = "alergia[]" value = "alergia alimentar"> alergia alimentar
+            <input type = "checkbox" name = "alergia[]" value = "medicamentos"> medicamentos
+            <input type = "checkbox" name = "alergia[]" value = "polen"> pólen
+            <input type = "checkbox" name = "alergia[]" value = "animais"> animais
+            <input type = "checkbox" name = "alergia[]" value = "nenhuma"> nenhuma
+            
+        </div>
+        
+        <br>
+        <!-- Caixa de texto de rolagem (TEXTAREA) -->
+        • Descreva cada alergia que o aluno possui: (Ex: Alergia a gatos, cães, uva, abacaxi, predisim, dipirona...)<br>
+        <b>Observação</b>: Caso ele tiver NENHUMA alergia, escrever "nenhum" dentro da caixa de texto.
+        <div>
+            <!-- Descrição da alergia que possui -->
+            <br>
+            <textarea name = "alergiaEscrita" value = "" rows = 15 cols = 100>
+            </textarea> 
+        </div>
+
+        <br> <br>
+
+        <!-- Botão de envio (SUBMIT) -->
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+    <p>Feito por Lana Akemi Ihara, 3º INFO.</p>
+
+    <!-- // http://localhost/prw/Lista04/Q2/Q2.html -->
+    <!-- // http://127.0.0.1/prw/Lista04/Q2/Q2.html -->
+    
+</body>
+</html>

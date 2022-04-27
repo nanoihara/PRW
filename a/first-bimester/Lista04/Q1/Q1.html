@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1 - Lista 4</title>
+</head>
+<body>
+    <!-- LANA AKEMI IHARA - 3º INFO -->
+    <!-- 1. Criar um formulário que contenha os itens apresentados abaixo. Em seguida faça
+um script php que efetue os cálculos e apresente o resultado.-->
+    
+    <!-- título -->
+    <h1>Escolha a opção desejada</h1>
+
+    <!-- "action" -> para que página o botão "submit" deve lhe enviar após este processo -->
+    <!-- "method" controla como as informações devem ser enviadas ao servidor -->
+    <form action="Q1.php" method="GET">
+        <div>
+            <!-- Somar -->
+            <input type="radio" name="matematica" id="somar" value="somar">
+            <label for="somar">Somar</label>
+
+            <!-- Subtrair -->
+            <input type="radio" name="matematica" id="subtrair" value="subtrair">
+            <label for="subtrair">Subtrair</label>
+
+            <!-- Dividir -->
+            <input type="radio" name="matematica" id="dividir" value="dividir">
+            <label for="dividir">Dividir</label>
+
+            <!-- Multiplicar -->
+            <input type="radio" name="matematica" id="multiplicar" value="multiplicar">
+            <label for="multiplicar">Multiplicar</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="num1">Numero 1:</label>
+            <input type="text" name="num1">
+        </div>
+
+        <div>
+            <label for="num2">Numero 2:</label>
+            <input type="text" name="num2">
+        </div>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+    <p>Feito por Lana Akemi Ihara, 3º INFO.</p>
+
+    <!-- // http://localhost/prw/Lista04/Q1/Q1.html -->
+    <!-- // http://127.0.0.1/prw/Lista04/Q1/Q1.html -->
+    
+</body>
+</html>
