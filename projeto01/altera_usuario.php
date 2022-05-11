@@ -26,7 +26,7 @@
 
     <!-- "action" -> para que página o botão "submit" deve lhe enviar após este processo -->
     <!-- "method" controla como as informações devem ser enviadas ao servidor -->
-    <form action="cadastro_usuario.php" method="POST">
+    <form action="altera_usuario_exe.php" method="POST">
 
         <!-- Caixa de texto de uma linha (TEXT) -->
         <!-- NOME -->
@@ -48,16 +48,17 @@
         </div>
 
         <br>
+        <input name="id_usuario" type="hidden" value="<?php echo $row["id_usuario"]?>">
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviar</button> 
 
     </form>
 
     <br>
     <p>Feito por Lana Akemi Ihara, 3º INFO.</p>
 
-    <!-- http://localhost/prw/projeto01/cadastro_usuario.htm -->
-    <!-- http://127.0.0.1/prw/projeto01/cadastro_usuario.htm -->
+    <!-- http://localhost/prw/projeto01/index.php -->
+    <!-- http://127.0.0.1/prw/projeto01/index.php -->
     
 </body>
 </html>
