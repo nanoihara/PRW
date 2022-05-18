@@ -4,7 +4,7 @@
 -- 1. Criação do banco de dados chamado lista06
 
 -- Comando "drop" para deletar o banco de dados
-drop database lista06;
+-- drop database lista06;
 
 -- Criação do banco de dados
 create database lista06;

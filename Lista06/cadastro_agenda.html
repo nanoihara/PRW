@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 06 - Cadastro de contatos</title>
+</head>
+<body>
+    <!-- Lana Akemi Ihara -->
+    <!-- BI3005771 - 3º INFO -->
+
+    <!-- 2.3. Cadastro_agenda.html - Formulário html onde os dados serão informados. -->
+    
+    <!-- título -->
+    <h3>Cadastro de contatos na agenda</h3>
+
+    <!-- "action" -> para que página o botão "submit" deve lhe enviar após este processo -->
+    <!-- "method" controla como as informações devem ser enviadas ao servidor -->
+    <form action="cadastro_agenda.php" method="POST">
+
+        <!-- NOME -->
+        <div> <!-- Tipo TEXT -->
+            <label for="nome">Nome:</label> 
+            <input type="text" name="nome" size="50">
+        </div>
+
+        <br>
+
+        <!-- APELIDO -->
+        <div> <!-- Tipo TEXT -->
+            <label for="apelido">Apelido:</label>
+            <input type="text" name="apelido" size="40">
+        </div>
+
+        <br>
+
+        <!-- ENDEREÇO -->
+        <div> <!-- Tipo TEXT -->
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" size="70">
+        </div>
+
+        <br>
+
+        <!-- BAIRRO -->
+        <div> <!-- Tipo TEXT -->
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" size="50">
+        </div>
+
+        <br>
+
+        <!-- CIDADE -->
+        <div> <!-- Tipo TEXT -->
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" size="50">
+        </div>
+
+        <br>
+
+        <!-- ESTADO -->
+        <div> <!-- Tipo TEXT -->
+            <label for="estado">Estado (apenas sigla):</label>
+            <input type="text" name="estado" size="02">
+        </div>
+
+        <br>
+
+        <!-- TELEFONE -->
+        <div> <!-- Tipo TEXT -->
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" size="15">
+        </div>
+
+        <br>
+
+        <!-- CELULAR -->
+        <div> <!-- Tipo TEXT -->
+            <label for="celular">Celular:</label>
+            <input type="text" name="celular" size="15">
+        </div>
+
+        <br>
+
+        <!-- E-MAIL -->
+        <div> <!-- Tipo EMAIL -->
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" size="70">
+        </div>
+
+        <br>
+        
+        <!-- Botão de envio dos dados -->
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+
+    <p>Feito por Lana Akemi Ihara, 3º INFO.</p>
+
+    <!-- Para acessar o site completo: -->
+    <!-- http://localhost/prw/Lista06/index.php -->
+    <!-- http://127.0.0.1/prw/Lista06/index.php -->
+
+    <!-- Para testar: -->
+    <!-- http://localhost/prw/Lista06/cadastro_agenda.html -->
+    <!-- http://127.0.0.1/prw/Lista06/cadastro_agenda.html -->
+    
+</body>
+</html>
