@@ -23,10 +23,13 @@
     
     <!-- título -->
     <h3>Alteração de Usuário - IFSP</h3>
+    
+    <?php echo "<img class='center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' align='center' width='150' height='150'/>"; ?>  
+    <div id="teste">
 
     <!-- "action" -> para que página o botão "submit" deve lhe enviar após este processo -->
     <!-- "method" controla como as informações devem ser enviadas ao servidor -->
-    <form action="altera_usuario_exe.php" method="POST">
+    <form action="altera_usuario_exe.php" method="POST" enctype="multipart/form-data">
 
         <!-- Caixa de texto de uma linha (TEXT) -->
         <!-- NOME -->
@@ -49,16 +52,15 @@
 
         <div>
             <input type="file" id="foto" name="foto" accept="image/*" />
-        </div>                        
-        <div class="form-item">
-            <input id="btn" type="submit" value="Enviar" >
-            <a href='index.php'> Voltar</a>
-        </div>
+        </div>             
 
         <br>
         <input name="id_usuario" type="hidden" value="<?php echo $row["id_usuario"]?>">
 
         <button type="submit">Enviar</button> 
+
+        <br><br>
+        <a href='index.php'> Voltar</a>
 
     </form>
 

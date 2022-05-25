@@ -45,7 +45,7 @@
 
     //Ao final, cria-se uma variável para inserir os valores no banco de dados.
     $sql = "INSERT INTO usuario (nome_usuario,email_usuario,telefone_usuario, foto_blob, foto_nome) 
-	    VALUES ('".$nome."','".$email."','".$telefone."','".$fotoBlob."','".$fotoNome."')";
+	    VALUES ('".$nome_usuario."','".$email_usuario."','".$fone_usuario."','".$fotoBlob."','".$fotoNome."')";
     
     $result = mysqli_query($con, $sql);
 
