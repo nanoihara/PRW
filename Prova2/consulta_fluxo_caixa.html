@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 2º bimestre - Consulta do fluxo</title>
+</head>
+<body>
+    <!-- Lana Akemi Ihara -->
+    <!-- BI3005771 - 3º INFO -->
+
+    <!-- 2.8. Consulta_fluxo_caixa.html - Formulário html onde o usuário vai selecionar o tipo de consulta,
+    podendo ser: Saldo Total, Total de Saídas e Total de Entradas. -->
+    
+    <!-- título -->
+    <h3>Consulta do fluxo de caixa</h3>
+
+    <!-- "action" -> para que página o botão "submit" deve lhe enviar após este processo -->
+    <!-- "method" controla como as informações devem ser enviadas ao servidor -->
+    <form action="consulta_fluxo_caixa.php" method="POST">
+
+        
+        <!-- TIPO -->
+        Tipo de consulta:
+        <div> <!-- radio -->
+
+            <!-- SALDO TOTAL -->
+            <input type="radio" name="consulta" value="saldo" required>
+            <label for="saldoTotal">Saldo Total</label>
+            
+            <!-- TOTAL SAÍDAS -->
+            <input type="radio" name="consulta" value="saida" required>
+            <label for="totalSaidas">Total Saídas</label>
+
+            <!-- TOTAL ENTRADAS -->
+            <input type="radio" name="consulta" value="entrada" required>
+            <label for="totalEntradas">Total Entradas</label>
+        </div>
+
+        <br>
+
+        <!-- Botão de envio dos dados -->
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+
+    <p>Feito por Lana Akemi Ihara, 3º INFO.</p>
+
+    <br><br>
+
+    <a href="index.php">Voltar para a página inicial</a>
+    
+    <!-- Para acessar o site completo: -->
+    <!-- http://localhost/prw/Prova2/index.php -->
+    <!-- http://127.0.0.1/prw/Prova2/index.php -->
+
+    <!-- Para testar: -->
+    <!-- http://localhost/prw/Prova2/consulta_fluxo_caixa.html -->
+    <!-- http://127.0.0.1/prw/Prova2/consulta_fluxo_caixa.html -->
+    
+</body>
+</html>

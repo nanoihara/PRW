@@ -74,8 +74,16 @@
         echo "Dados inseridos com sucesso";
     else
         echo "Erro ao inserir no banco de dados: ".mysqli_error($con);
-
+    
     // http://localhost/prw/AgendaProject/index.html
     // http://127.0.0.1/prw/AgendaProject/index.html
 
 ?>
+
+<br> <br>
+
+Voltar para a:
+<ul>
+    <li><a href="listar_agenda.php">Lista da Agenda</a></li>
+    <li><a href="index.php">Página inicial</a></li>
+</ul>

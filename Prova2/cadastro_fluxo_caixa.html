@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 2º bimestre - Cadastro do fluxo</title>
+</head>
+<body>
+    <!-- Lana Akemi Ihara -->
+    <!-- BI3005771 - 3º INFO -->
+
+    <!-- 2.3. Cadastro_fluxo_caixa.html - Formulário html onde os dados serão informados, conforme modelo no arquivo. -->
+    
+    <!-- título -->
+    <h3>Cadastro do fluxo de caixa</h3>
+
+    <!-- "action" -> para que página o botão "submit" deve lhe enviar após este processo -->
+    <!-- "method" controla como as informações devem ser enviadas ao servidor -->
+    <form action="cadastro_fluxo_caixa.php" method="POST">
+
+        <!-- DATA -->
+        <div> <!-- date -->
+            <label for="data">Data:</label> 
+            <input type="date" name="data" size="50" required>
+        </div>
+
+        <br>
+
+        <!-- TIPO -->
+        <div> <!-- radio -->
+            Tipo:
+            <!-- ENTRADA -->
+            <input type="radio" name="tipo" value="entrada" required>
+            <label for="entrada">entrada</label>
+            
+            <!-- SAÍDA -->
+            <input type="radio" name="tipo" value="saida" required>
+            <label for="saida">saída</label>
+        </div>
+
+        <br>
+
+        <!-- VALOR -->
+        <div> <!-- text -->
+            <label for="valor">Valor:</label>
+            <input type="text" name="valor" size="10,2" required>
+        </div>
+
+        <br>
+
+        <!-- HISTORICO -->
+        <div> <!-- text -->
+            <label for="historico">Historico:</label>
+            <input type="text" name="historico" size="150" required>
+        </div>
+
+        <br>
+
+        <!-- CHEQUE -->
+        <div> <!-- menu suspenso -->
+             Cheque:
+
+            <select name = "cheque" value = 0 size = 1>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+
+        <br>
+        
+        <!-- Botão de envio dos dados -->
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+
+    <p>Feito por Lana Akemi Ihara, 3º INFO.</p>
+
+    <br><br>
+
+    <a href="index.php">Voltar para a página inicial</a>
+    
+    <!-- Para acessar o site completo: -->
+    <!-- http://localhost/prw/Prova2/index.php -->
+    <!-- http://127.0.0.1/prw/Prova2/index.php -->
+
+    <!-- Para testar: -->
+    <!-- http://localhost/prw/Prova2/cadastro_fluxo_caixa.html -->
+    <!-- http://127.0.0.1/prw/Prova2/cadastro_fluxo_caixa.html -->
+    
+</body>
+</html>
